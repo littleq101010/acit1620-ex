@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form button {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: hsl(120, 56%, 40%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 5rem;
+    margin-left: auto;
+}
+
+
+
+header {
+    background-color: teal;
+    height: 7rem;
+    text-align: center;
+    color: #fff;
+ 
+}
+ 
+
+h1 {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+
+.sidebar {
+    width: 5rem;
+    margin-right: 3rem;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+
+img {
+    float: left;
+    height: 10rem;
+    margin-right: 1rem;
+}
+
+main p{
+    margin-top: 0px;
+}
+
+
+footer {
+    position: absolute;
+    background-color: teal;
+    color: #fff;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+
+main {
+    margin-left: 2rem;
+    flex: 1;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        border-right: 1px grey solid;
+        padding-right: 1rem;
+        padding-left: 0;
+    }
+
+    li:last-child {
+        border: none;
+    }
+}
