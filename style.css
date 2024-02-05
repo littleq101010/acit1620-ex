@@ -1,0 +1,84 @@
+:root {
+    --base-color: 50,90%;
+    --base-font-color: 170,50%
+}
+
+body {
+    margin: 0 auto;
+}
+
+div > header {
+    background-color: hsl(var(--base-color),50%);
+    color: hsl(var(--base-font-color),100%);
+    height: 6rem;
+    display: flex;
+    font-size: 2rem;
+
+}
+
+span {
+    margin: auto;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    align-items: start;
+    padding-left: 0px;
+    
+}
+
+ul li {
+    color: hsl(var(--base-font-color),50%);
+    box-shadow: 1px 3px 5px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 300ms;
+    
+}
+
+
+h3 {
+    color:hsl(var(--base-font-color),50%)
+}
+
+ul li:hover {
+    background-color: hsl(var(--base-font-color),50%);
+    color: hsl(var(--base-font-color),100%);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px gray;
+    margin-top: -0.5rem;
+}
+
+
+header:hover {
+    color:hsl(var(--base-font-color),100%)
+}
+
+section {
+    transition: background-color 300ms;
+
+}
+
+
+section:hover {
+    background-color: hsl(var(--base-color),50%);
+    color: hsl(var(--base-font-color),100%);
+    padding: 1rem;
+
+    h3 {
+        color: hsl(var(--base-font-color),100%);
+    }
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background-color: hsl(var(--base-color),50%);
+    width: 100%;
+}
